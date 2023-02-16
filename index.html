@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>max calculate</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    html, body {
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+button{
+  transition:0.5s;
+  height: 45px;
+  border-radius: 15px;
+  background-color: #e96a16;
+}
+.container{
+ background-color: #171721;
+ height:390px;
+ width:330px;
+ border-radius: 8px;
+padding:8px
+}
+.input{
+  height: 20px;
+}
+button:hover{
+  background-color: #046204;
+  color: white;
+}
+#res{
+  background-color: white;
+  color: black;
+  width: 100px;
+  height: 50px;
+  text-align-last: 5px;
+  border-radius: 5px;
+}
+
+
+  </style>
+</head>
+  
+<body>
+
+  <header>
+  </header>
+  <center>
+  <div class="container"> <h1>CALCULADORA<h1>
+  <input id="n1" class="input"  placeholder="Digite um número">
+  <input id="n2" class="input" placeholder="Digite outro número">
+  <br></br>
+  <button onclick='somar()'>Somar</button>
+  <button onclick="subtrair()">Subtrair</button>
+  <button onclick="dividir()">Dividir</button>
+  <button onclick="multiplicar()">Multiplicar</button>
+  <br></br>
+
+  <div id="res">
+ <span class="resposta"></span> 
+  </div>
+
+  </div>
+
+  <script>
+    var n1= document.querySelector('#n1')
+    var n2= document.querySelector('#n2')
+    var resposta= document.querySelector('span')
+    function somar(){
+      resposta.innerHTML=parseInt(n1.value)+parseInt(n2.value)
+    }
+    function subtrair(){
+      resposta.innerHTML=parseInt(n1.value)-parseInt(n2.value)
+    }
+    function dividir(){
+      resposta.innerHTML=parseInt(n1.value)/parseInt(n2.value)
+    }
+    function multiplicar(){
+      resposta.innerHTML=parseInt(n1.value)*parseInt(n2.value)
+    }
+    
+  </script>
+
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+</html>
