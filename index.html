@@ -50,6 +50,7 @@ button:hover{
   <header>
   </header>
   <center>
+    <!--início da calculadora-->
   <div class="container"> <h1>CALCULADORA<h1>
   <input id="n1" class="input"  placeholder="Digite um número">
   <input id="n2" class="input" placeholder="Digite outro número">
@@ -62,11 +63,13 @@ button:hover{
 
   <div id="res">
  <span class="resposta"></span> 
+    <!--fim da calculadora-->
   </div>
 
   </div>
 
   <script>
+    <!--parte de Js-->
     var n1= document.querySelector('#n1')
     var n2= document.querySelector('#n2')
     var resposta= document.querySelector('span')
@@ -82,9 +85,8 @@ button:hover{
     function multiplicar(){
       resposta.innerHTML=parseInt(n1.value)*parseInt(n2.value)
     }
-    
+     <!--parte de Js-->
   </script>
-
   <script src="script.js"></script>
   <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
 </body>
